@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Fund A",
+    "description": "Invest in special saving accounts",
+    "type": "Money Market",
+    "history": "Short term cash, low risk losing money",
+    "NAV": 100
+  },
+  {
+    "id": 2,
+    "name": "Fund B",
+    "description": "Invest in cooperate and government bonds",
+    "type": "Bond",
+    "history": "Steady income overtime, low risk losing money",
+    "NAV": 150
+  },
+  {
+    "id": 3,
+    "name": "Fund C",
+    "description": "Invest in equities or stocks",
+    "type": "Equity",
+    "history": "High earn overtime, high risk losing money",
+    "NAV": 200
+  },
+  {
+    "id": 4,
+    "name": "Fund D",
+    "description": "Invest in combination of stocks and bonds",
+    "type": "Balanced",
+    "history": "High return from stocks and steady income from bonds, high risk losing money",
+    "NAV": 250
+  }
+]
