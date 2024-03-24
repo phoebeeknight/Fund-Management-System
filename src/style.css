@@ -25,7 +25,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -77,6 +76,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+  .sidebar {
+    padding-top: 15px;
+  }
 }
 
 .modal-backdrop {
@@ -97,6 +99,7 @@ button:focus-visible {
   overflow-x: auto;
   display: flex;
   flex-direction: column;
+  max-width: 80%;
 }
 
 .modal-header,
@@ -148,4 +151,20 @@ button:focus-visible {
   color: white;
   background: #ee6103;
   border: 1px solid rgba(235, 233, 229, 0.87);
+}
+
+.sidebar {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #112231;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
 }

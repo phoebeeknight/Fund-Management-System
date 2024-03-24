@@ -11,6 +11,7 @@
           <p>Current Net Asset Value (NAV): ${{ fund.NAV }} per unit</p>
           <label>Amount: $ </label>
           <input type="number" v-model="amount" />
+          <div></div>
           <label>Units: </label>
           <input type="number" v-model="units" />
         </slot>
@@ -46,6 +47,22 @@ export default {
     },
   },
   methods: {
+    addUser: (user) => {
+      this.users.push(user);
+    },
+    deleteUserByToken: (token) => {
+      var user = this.findByToken(token);
+      if (user != 'undefined') {
+        this.users.$remove(user);
+      } else {
+        //
+      }
+    },
+    findByToken: (token) => {
+      this.users.find((usr) => {
+        return usr.token === token;
+      });
+    },
     invest() {
       this.user.push({
         id: this.userId.id,

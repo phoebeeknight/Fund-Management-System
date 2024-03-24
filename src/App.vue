@@ -13,10 +13,15 @@ export default {
 </script>
 
 <template>
-  <div id="app">
-    <Portfolio />
-    <FundList />
-    <router-view :key="$route.fullPath" />
+  <div class="row" id="app">
+    <div class="sidebar">
+      <FundList />
+    </div>
+
+    <div class="main">
+      <Portfolio />
+      <router-view :key="$route.fullPath" />
+    </div>
   </div>
 </template>
 
